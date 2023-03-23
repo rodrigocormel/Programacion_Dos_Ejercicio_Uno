@@ -121,4 +121,12 @@ public class Grupo2 : MonoBehaviour
         return resultadito;
     }
 
+    static void Mientras(string[] args)
+    {
+        int cont = 2;
+        while (cont <=6)
+        {
+            cont++;
+        }
+    }
 }
