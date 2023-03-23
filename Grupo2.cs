@@ -210,5 +210,21 @@ public class Grupo2 : MonoBehaviour
 
     Profesor profesor1 = new Profesor();
     profesor1.Nombre = "María";
-    profesor1.Saludar();    
+    profesor1.Saludar();
+
+    public class Producto
+    {
+        public string Nombre { get; set; }
+        public decimal Precio { get; set; }
+        public int Cantidad { get; set; }
+
+        public Producto(string nombre, decimal precio, int cantidad = 1)
+        {
+            Nombre = nombre;
+            Precio = precio;
+            Cantidad = cantidad;
+        }
+    }
+    Producto producto1 = new Producto("Camisa", 49.99m);
+    Producto producto2 = new Producto("Zapatos", 99.99m, 2);
 }
