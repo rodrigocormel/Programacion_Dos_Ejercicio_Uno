@@ -115,4 +115,10 @@ public class Grupo2 : MonoBehaviour
         return a + b;
     }
 
+    static int Number11(int a, int b)
+    {
+        int resultadito = a * b;
+        return resultadito;
+    }
+
 }
