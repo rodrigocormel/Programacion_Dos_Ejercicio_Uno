@@ -142,4 +142,33 @@ public class Grupo2 : MonoBehaviour
     {
         int resultado = Sumar(10, 6);
     }
+
+    public class Polimorfismo
+    {
+            void Sonido()
+        {
+            Debug.Log("Sonido");
+        }
+    }
+
+    public class Perro : Polimorfismo
+    {
+            void Sonido()
+        {
+            Debug.Log("Guau!");
+        }
+    }
+
+    public class Gato : Polimorfismo
+    {
+            void Sonido()
+        {
+            Debug.Log("Miau!");
+        }
+    }
+    Animal animal1 = new Perro();
+    Animal animal2 = new Gato();
+
+    animal1.HacerSonido();
+    animal2.HacerSonido();
 }
