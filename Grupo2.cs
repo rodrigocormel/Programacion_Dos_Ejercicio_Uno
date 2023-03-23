@@ -72,5 +72,15 @@ public class Grupo2 : MonoBehaviour
         }
     }
 
+    void numero3()
+    {
+        int n;
+        n = 3;
+
+        for (int i = 1; i <= n; i++)
+        {
+            Debug.Log(i);
+        }
+    }
 
 }
