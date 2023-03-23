@@ -130,12 +130,16 @@ public class Grupo2 : MonoBehaviour
         }
     }
     static void Lista(string[] lista)
-        {
-            List<int> numeros = new List<int>();
-            numeros.Add(1);
-            numeros.Add(2);
-            numeros.Add(3);
-            numeros.Add(4);
-            numeros.Add(5);
-        }
+    {
+        List<int> numeros = new List<int>();
+        numeros.Add(1);
+        numeros.Add(2);
+        numeros.Add(3);
+        numeros.Add(4);
+        numeros.Add(5);
+    }
+    static void Parametro(string[] para)
+    {
+        int resultado = Sumar(10, 6);
+    }
 }
