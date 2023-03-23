@@ -102,4 +102,17 @@ public class Grupo2 : MonoBehaviour
         Debug.log(dois);
     }
 
+    static void Numero9(string[] meta)
+    {
+        int umma = 3;
+        int dois = 7;
+        int resultado = Sumar(umma, dois);
+    Debug.log("El resultado es: " + resultado);
+    }
+
+    static int Sumar(int a, int b)
+    {
+        return a + b;
+    }
+
 }
