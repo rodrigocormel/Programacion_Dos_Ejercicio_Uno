@@ -121,7 +121,7 @@ public class Grupo2 : MonoBehaviour
         return resultadito;
     }
 
-    static void Mientras(string[] args)
+    static void Mientras(string[] abc)
     {
         int cont = 2;
         while (cont <=6)
@@ -129,4 +129,13 @@ public class Grupo2 : MonoBehaviour
             cont++;
         }
     }
+    static void Lista(string[] lista)
+        {
+            List<int> numeros = new List<int>();
+            numeros.Add(1);
+            numeros.Add(2);
+            numeros.Add(3);
+            numeros.Add(4);
+            numeros.Add(5);
+        }
 }
