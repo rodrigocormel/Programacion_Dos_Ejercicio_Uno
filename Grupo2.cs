@@ -171,4 +171,44 @@ public class Grupo2 : MonoBehaviour
 
     animal1.HacerSonido();
     animal2.HacerSonido();
+
+    public class Persona
+    {
+        public string Nombre { get; set; }
+        public int Edad { get; set; }
+
+        public void Saludar()
+        {
+            Debug.Log("Hola, soy " + Nombre);
+        }
+    }
+
+    public class Estudiante : Persona
+    {
+        public int Matricula { get; set; }
+        public string Carrera { get; set; }
+
+        public void Estudiar()
+        {
+            Debug.Log("Estoy estudiando " + Carrera);
+        }
+    }
+
+    public class Profesor : Persona
+    {
+        public string Materia { get; set; }
+        public string Departamento { get; set; }
+
+        public void Enseñar()
+        {
+            Debug.Log("Soy profesor de " + Materia);
+        }
+    }
+    Estudiante estudiante1 = new Estudiante();
+    estudiante1.Nombre = "Juan";
+    estudiante1.Saludar();
+
+    Profesor profesor1 = new Profesor();
+    profesor1.Nombre = "María";
+    profesor1.Saludar();    
 }
