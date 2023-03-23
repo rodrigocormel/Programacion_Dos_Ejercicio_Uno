@@ -83,4 +83,23 @@ public class Grupo2 : MonoBehaviour
         }
     }
 
+
+    void numero5()
+    {
+        int[] umma = new int[10];
+        int[] dois = new int[10];
+        int a = 9;
+
+        for (int b = 0; b < 10; b++)
+        {
+            umma[b] = int(random(20));
+            dois[a] = umma[b];
+            a = a - 1;
+        }
+
+        Debug.log(umma);
+        Debug.log("");
+        Debug.log(dois);
+    }
+
 }
